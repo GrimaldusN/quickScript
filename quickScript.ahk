@@ -1,18 +1,17 @@
-F1:: 
-if !ProcessExist("chrome.exe")
-    Run("chrome.exe")
-else
-    ProcessClose("chrome.exe")
-
-return
-
-vkC0::  
-Mute() 
-if WinExist("ahk_exe chrome.exe") {  
-    WinActivate 
+﻿F1:: {
+    if !ProcessExist("chrome.exe")
+        Run("chrome.exe")
+    else
+        ProcessClose("chrome.exe")
 }
-return
+
+vkC0:: {
+    Mute()
+    if WinExist("chrome.exe") {
+        WinActivate
+    }
+}
 
 Mute() {
-    SoundSetMute !SoundGetMute()
+    SoundSetMute(!SoundGetMute("Master"))
 }
