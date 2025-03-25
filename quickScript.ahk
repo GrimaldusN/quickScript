@@ -13,21 +13,11 @@ F2:: {
 }
 
 F3:: {
-    if(WinExist("ahk_exe firefox.exe")){
-        WinActivate
-        Send("^w")
-    } else {
-        Run("firefox.exe https://chatgpt.com/")
-    }
+    Run("firefox.exe https://chatgpt.com/")
 }
 
 F4:: {
-    if(WinExist("ahk_exe firefox.exe")){
-        WinActivate
-        Send("^w")
-    } else {
-        Run("firefox.exe https://soundcloud.com/discover")
-    }
+    Run("firefox.exe https://soundcloud.com/discover")
 }
 
 F5:: {
