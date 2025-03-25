@@ -41,3 +41,15 @@ vkC0:: {
             WinMinimize("ahk_exe chrome.exe")
     }
 }
+
+`:: {
+    muteState := SoundGetMute()
+    SoundSetMute(!muteState)
+
+    if WinExist("ahk_exe chrome.exe"){
+        if muteState
+            WinMaximize("ahk_exe chrome.exe")
+        else
+            WinMinimize("ahk_exe chrome.exe")
+    }
+}
