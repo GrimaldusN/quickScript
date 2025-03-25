@@ -5,6 +5,13 @@
         ProcessClose("chrome.exe")
 }
 
+F2:: {
+    if !ProcessExist("firefox.exe")
+        Run("firefox.exe")
+    else
+        ProcessClose("firefox.exe")
+}
+
 vkC0:: {
     muteState := SoundGetMute()
     SoundSetMute(!muteState)
