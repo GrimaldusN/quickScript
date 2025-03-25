@@ -6,12 +6,13 @@
 }
 
 vkC0:: {
-    Mute()
-    if WinExist("chrome.exe") {
-        WinActivate
-    }
-}
+    muteState := SoundGetMute()
+    SoundSetMute(!muteState)
 
-Mute() {
-    SoundSetMute(!SoundGetMute("Master"))
+    if WinExist("ahk_exe chrome.exe"){
+        if muteState
+            WinMaximize
+        else
+            WinActivate
+    }
 }
