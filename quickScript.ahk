@@ -26,7 +26,7 @@ F3:: {
         WinActivate
         Send("^w")
     } else {
-        Run("firefox.exe https://de.pornhub.org/")
+        Run("firefox.exe https://chatgpt.com/")
     }
 }
 
