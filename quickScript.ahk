@@ -12,6 +12,10 @@ F2:: {
         ProcessClose("firefox.exe")
 }
 
+F3:: {
+    Run("firefox.exe https://de.pornhub.org/")
+}
+
 vkC0:: {
     muteState := SoundGetMute()
     SoundSetMute(!muteState)
