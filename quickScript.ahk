@@ -12,6 +12,15 @@ F2:: {
         ProcessClose("firefox.exe")
 }
 
+F3:: {
+    if(WinExist("ahk_exe firefox.exe")){
+        WinActivate
+        Send("^w")
+    } else {
+        Run("firefox.exe https://chatgpt.com/")
+    }
+}
+
 F4:: {
     if(WinExist("ahk_exe firefox.exe")){
         WinActivate
@@ -21,12 +30,11 @@ F4:: {
     }
 }
 
-F3:: {
-    if(WinExist("ahk_exe firefox.exe")){
-        WinActivate
-        Send("^w")
+F5:: {
+    if (ProcessExist("Code.exe")) {
+        ProcessClose("Code.exe")  
     } else {
-        Run("firefox.exe https://chatgpt.com/")
+        Run("C:\Program Files\Microsoft VS Code\Code.exe")
     }
 }
 
