@@ -34,7 +34,7 @@ F5:: {
     if (ProcessExist("Code.exe")) {
         ProcessClose("Code.exe")  
     } else {
-        Run("C:\Program Files\Microsoft VS Code\Code.exe")
+        Run("C:\Users\Multimedia3\AppData\Local\Programs\Microsoft VS Code\Code.exe")
     }
 }
 
