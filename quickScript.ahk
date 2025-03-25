@@ -22,8 +22,8 @@ vkC0:: {
 
     if WinExist("ahk_exe chrome.exe"){
         if muteState
-            WinMaximize
+            WinMaximize("ahk_exe chrome.exe")
         else
-            WinActivate
+            WinMinimize("ahk_exe chrome.exe")
     }
 }
