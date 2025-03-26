@@ -63,6 +63,14 @@ NumpadSub:: {
     return
 }
 
+PrintScreen:: {
+    if !WinExist("ahk_exe SnippingTool.exe")
+        Run("SnippingTool.exe")
+    else
+        WinActivate("ahk_exe SnippingTool.exe")
+        Send("^n")
+}
+
 ^+q::{
     global toggle
 
