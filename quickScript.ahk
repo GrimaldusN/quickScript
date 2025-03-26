@@ -20,6 +20,10 @@ F4:: {
     Run("firefox.exe https://soundcloud.com/discover")
 }
 
+F10:: {
+    Run("firefox.exe https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+}
+
 F5:: {
     if (ProcessExist("Code.exe")) {
         ProcessClose("Code.exe")  
