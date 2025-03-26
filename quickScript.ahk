@@ -1,4 +1,6 @@
-﻿F1:: {
+﻿toggle := false
+
+F1:: {
     if !ProcessExist("chrome.exe")
         Run("chrome.exe")
     else
@@ -54,4 +56,28 @@ vkC0:: {
         else
             WinMinimize("ahk_exe chrome.exe")
     }
+}
+
+NumpadSub:: {
+    Send("^w")
+    return
+}
+
+^+q::{
+    global toggle
+
+    toggle := !toggle
+
+    if(toggle){
+        SetTimer(AutoClick, 100)
+        MsgBox("Автокликер включен.")
+    } else {
+        SetTimer(AutoClick, 0)
+        MsgBox("Автокликер выключен.")
+    }
+}
+
+AutoClick(){
+    Click()
+    Sleep(333)
 }
