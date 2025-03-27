@@ -16,13 +16,7 @@ F2:: {
 
 F3:: {
     Run("firefox.exe https://chatgpt.com/")
-}
-
-F4:: {
     Run("firefox.exe https://soundcloud.com/discover")
-}
-
-F6:: {
     Run("firefox.exe https://leetcode.com/problemset/")
 }
 
