@@ -8,16 +8,13 @@ F1:: {
 }
 
 F2:: {
-    if !ProcessExist("firefox.exe")
-        Run("firefox.exe")
-    else
+    if !ProcessExist("firefox.exe") {
+        Run("firefox.exe https://chatgpt.com/")
+        Run("firefox.exe https://soundcloud.com/discover")
+        Run("firefox.exe https://leetcode.com/problemset/")
+    } else {
         ProcessClose("firefox.exe")
-}
-
-F3:: {
-    Run("firefox.exe https://chatgpt.com/")
-    Run("firefox.exe https://soundcloud.com/discover")
-    Run("firefox.exe https://leetcode.com/problemset/")
+    }
 }
 
 F10:: {
