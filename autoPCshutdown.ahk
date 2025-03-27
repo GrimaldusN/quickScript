@@ -1,8 +1,8 @@
 SetTimer(CheckTime, 60000)
 
-CheckTime(){
-    currentTime := A_Hour
-    if(currentTime == "15:30"){
-        Shutdown(1)
+CheckTime() {
+    currentTime := SubStr(A_Now, 9, 4)
+    if (currentTime == "0915") {  
+        Shutdown(8)
     }
 }

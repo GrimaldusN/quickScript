@@ -23,7 +23,7 @@ F4:: {
 }
 
 F10:: {
-    Run("firefox.exe https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+    Run("firefox.exe https://www.ausbildung.de/aktuelle-ausbildungsplaetze/?form_main_search%5Bradius%5D=1000&form_main_search%5Bexpected_graduation%5D=&form_main_search%5Bprofession_public_id%5D=&form_main_search%5Bprofession_topic_public_id%5D=&form_main_search%5Bindustry_public_id%5D=&form_main_search%5Bstarts_no_earlier_than%5D=Januar+2025&form_main_search%5Bshow_regular_apprenticeships%5D=1&form_main_search%5Bshow_educational_trainings%5D=1&form_main_search%5Bshow_integrated_degree_programs%5D=1&form_main_search%5Bshow_qualifications%5D=1&form_main_search%5Bshow_inhouse_trainings%5D=1&form_main_search%5Bshow_training_programs%5D=1&form_main_search%5Bshow_educational_trainings_and_regular_apprenticeships%5D=1&form_main_search%5Bsort_order%5D=relevance&form_main_search%5Bwhat%5D=Fachinformatiker%2Fin+f%C3%BCr+Anwendungsentwicklung&form_main_search%5Bwhere%5D=Hannover&t_where=Hannover&t_what=Fachinformatiker%2Fin+f%C3%BCr+Anwendungsentwicklung")
 }
 
 F5:: {
