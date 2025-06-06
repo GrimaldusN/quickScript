@@ -12,7 +12,6 @@ F2:: {
         Run("firefox.exe https://chatgpt.com/")
         Run("firefox.exe https://soundcloud.com/discover")
         Run("firefox.exe https://leetcode.com/problemset/")
-        Run("firefox.exe https://mein-deutschbuch.de/niveau-b2.html")
         Run("firefox.exe https://github.com/GrimaldusN")
     } else {
         ProcessClose("firefox.exe")
